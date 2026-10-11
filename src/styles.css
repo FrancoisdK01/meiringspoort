@@ -250,6 +250,21 @@ a { color: inherit; }
   background: linear-gradient(var(--padlyn), transparent);
   animation: blaai 2.2s ease-in-out infinite;
 }
+.held__byskrif {
+  position: absolute;
+  left: var(--gutter-l);
+  bottom: clamp(1.5rem, 5vh, 3rem);
+  margin: 0;
+  font-size: 0.78rem;
+  color: rgba(240, 230, 210, 0.6);
+  animation: held-op 1s 1.8s ease both;
+}
+.grafika-byskrif {
+  font-size: var(--t-small);
+  color: var(--fg-dim);
+  max-width: 58ch;
+  margin-top: 0.8rem;
+}
 @keyframes held-styg { to { transform: none; } }
 @keyframes held-op { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
 @keyframes held-vervaag { from { opacity: 0; } to { opacity: 1; } }
