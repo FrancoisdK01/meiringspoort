@@ -9,7 +9,7 @@ Turn the article into a single-page, Afrikaans, scroll-driven feature that reads
 ## Decisions
 
 - Stack: Vite + vanilla JS, GSAP ScrollTrigger, Lenis smooth scroll, self-hosted fonts via fontsource. Static `dist/`, zero-config on Vercel.
-- Content: the student's text verbatim, light typo fixes only (e.g. "Augutus", "provinisiale", "Meringspoort"). Subheadings added for structure. Captions kept, expanded only where the document already supplies the context.
+- Content: the student's text verbatim. Only Afrikaans spelling mistakes may be corrected (e.g. "Augutus", "provinisiale", "Meringspoort", "bedywighede", "hospital", "Betrokkenis", "over aan", "voor en dag", "elkgeval", "Ten einde"); no rewording, no sentence restructuring, no paragraph splitting. Subheadings, chapter sub-decks, stat labels and captions for the site's own graphics are added interface copy; the infographic step text uses the student's own sentences. Francois confirmed this rule on 2026-10-11 after a first draft had reworded several passages.
 - Media: both embedded WhatsApp videos extracted from the .docx OLE packages and re-encoded for web; images resized to max 1600px, served as JPEG/WebP; the then/now photo split into two halves for a comparison slider. The two YouTube Shorts the author supplied (NlecABVuq1w, Ac5usu9Hfq8) are the same two clips, so the site self-hosts the video and links to YouTube from the caption and credits.
 - Language: everything in Afrikaans, including UI labels.
 
