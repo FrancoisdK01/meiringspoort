@@ -1,0 +1,454 @@
+<!doctype html>
+<html lang="af">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Meiringspoort veg verwoestende vloedskade</title>
+  <meta name="description" content="2026 merk ’n 30-jaar-kitsvloedsiklus. ’n Scrollytelling-verhaal oor die vloed wat die N12 deur die Swartberge verwoes het, en die Karoo-dorpe wat aan weerskante wag. Deur Estian Hobbs.">
+  <meta property="og:title" content="Meiringspoort veg verwoestende vloedskade">
+  <meta property="og:description" content="2026 merk ’n 30-jaar-kitsvloedsiklus. Die verhaal van die poort, die ompad en die dorpe wat wag.">
+  <meta property="og:image" content="/media/rivier-oor-pad.jpg">
+  <meta property="og:type" content="article">
+  <meta name="theme-color" content="#17110d">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/src/styles.css">
+</head>
+<body>
+
+<!-- Die pad: die leser se vordering, geteken soos die N12 se geel randlyn -->
+<aside class="pad" aria-hidden="true">
+  <div class="pad__lyn"><div class="pad__verf"></div></div>
+  <ol class="pad__merkers"></ol>
+</aside>
+
+<main id="verhaal">
+
+  <!-- 1. Voorblad -->
+  <header class="held" data-theme="nag" data-chapter="Begin">
+    <video class="held__video" autoplay muted loop playsinline preload="metadata" poster="/media/vloed-hero-poster.jpg">
+      <source src="/media/vloed-hero.mp4" type="video/mp4">
+    </video>
+    <div class="held__skadu"></div>
+    <div class="held__inhoud">
+      <p class="held__plek">Die N12 deur die Swartberge, Wes-Kaap</p>
+      <h1 class="held__kop"><span><em>Meiringspoort veg</em></span> <span><em>verwoestende</em></span> <span><em>vloedskade</em></span></h1>
+      <p class="held__dek">2026 merk ’n 30-jaar-kitsvloedsiklus</p>
+      <p class="held__skrywer">Deur Estian Hobbs<span>Oktober 2026</span></p>
+    </div>
+    <a class="held__blaai" href="#blurb"><span>Blaai af</span><i></i></a>
+  </header>
+
+  <!-- 2. Blurb -->
+  <section class="blok blok--staan" id="blurb" data-theme="nag">
+    <p class="staan">Meiringspoort het verwoestende skade weens oorstromings opgedoen, met die vloedlyn wat byna tweemaal hoër is as dié van die vorige vloed in 1996. Hierdie inham tussen die Swartberge maak die gebied besonder kwesbaar, veral wanneer die Grootrivier se walle oorstroom en die rivierbeddings oorloop. Die bergagtige ligging en intense konvektiewe somerreënval, hoewel wisselvallig, dra by tot vinnige afvloei van groot hoeveelhede water.</p>
+  </section>
+
+  <figure class="foto foto--breed" data-theme="nag">
+    <picture>
+      <source srcset="/media/bord-meiringspoort.webp" type="image/webp">
+      <img src="/media/bord-meiringspoort.jpg" width="650" height="450" alt="Die naambord van Meiringspoort langs die N12, met die teerpad wat die poort binnegaan" loading="lazy">
+    </picture>
+    <figcaption>Aanvangspunt van Meiringspoort soos dit vanaf die N12 lyk, met die pad wat deur die Swartberge tussen De Rust en Klaarstroom loop.</figcaption>
+  </figure>
+
+  <!-- 3. Die ompad: skrol-gedrewe roetekaart -->
+  <section class="blok" data-theme="nag" data-chapter="Die ompad" id="ompad">
+    <h2 class="hofie">Die ompad</h2>
+    <p class="teks">Maande ná die vloede lê die verwoesting steeds soos ’n wond oor die streek.</p>
+
+    <div class="skrolly" id="roetes">
+      <div class="skrolly__grafika">
+        <svg class="kaart" viewBox="0 0 1000 660" role="img" aria-labelledby="kaart-titel">
+          <title id="kaart-titel">Skematiese kaart van Meiringspoort en die ompaaie daaromheen</title>
+          <path class="kaart__berg" d="M250 300 C 330 270, 420 290, 520 280 S 700 250, 820 300" />
+          <path class="kaart__berg" d="M270 322 C 350 297, 440 312, 540 302 S 720 274, 840 322" />
+          <text class="kaart__bergnaam" x="560" y="262">Swartberge</text>
+
+          <g class="kaart__paaie">
+            <path d="M416 431 L 502 400" />
+            <path d="M502 400 C 520 380, 540 385, 548 370 S 575 360, 593 350" />
+            <path d="M593 350 C 600 250, 540 150, 515 47" />
+            <path d="M416 431 L 283 412 L 174 400" />
+            <path d="M174 400 L 68 307" />
+            <path d="M68 307 C 180 230, 330 130, 515 47" />
+            <path class="kaart__grond" d="M416 431 C 400 380, 390 350, 372 316" />
+            <path d="M372 316 L 593 350 L 751 338" />
+            <path d="M502 400 L 658 453" />
+            <path d="M658 453 L 751 338" />
+            <path d="M372 316 C 330 240, 300 200, 250 170" />
+            <path d="M658 453 L 484 546" />
+            <path d="M416 431 L 484 546 L 398 614" />
+          </g>
+
+          <g class="kaart__lig">
+            <path class="lig" data-stap="1" d="M502 400 C 520 380, 540 385, 548 370 S 575 360, 593 350" />
+            <path class="lig" data-stap="2" d="M416 431 L 283 412 L 174 400 L 68 307 C 180 230, 330 130, 515 47 C 540 150, 600 250, 593 350" />
+            <path class="lig" data-stap="3" d="M416 431 L 283 412 L 174 400" />
+            <path class="lig" data-stap="3" d="M372 316 L 593 350 L 751 338" />
+            <path class="lig lig--trok" data-stap="4" d="M416 431 L 502 400 L 658 453 L 751 338 L 593 350 L 372 316" />
+            <path class="lig lig--trok" data-stap="4" d="M416 431 L 283 412 L 174 400 L 68 307 C 150 250, 200 210, 250 170 C 300 200, 330 240, 372 316" />
+            <path class="lig lig--gebreek" data-stap="2 3 4" d="M536 366 L 560 388 M560 366 L 536 388" />
+            <path class="lig lig--gebreek" data-stap="4" d="M384 362 L 404 382 M404 362 L 384 382" />
+          </g>
+
+          <g class="kaart__dorpe">
+            <g transform="translate(416 431)"><circle r="5"/><text x="-14" y="24">Oudtshoorn</text></g>
+            <g transform="translate(502 400)"><circle r="5"/><text x="8" y="22">De Rust</text></g>
+            <g transform="translate(593 350)"><circle r="5"/><text class="kaart__l-klaarstroom" x="12" y="-6">Klaarstroom</text></g>
+            <g transform="translate(372 316)"><circle r="5"/><text x="-100" y="-8">Prins Albert</text></g>
+            <g transform="translate(515 47)"><circle r="5"/><text x="12" y="6">Beaufort-Wes</text></g>
+            <g transform="translate(751 338)"><circle r="5"/><text x="12" y="6">Willowmore</text></g>
+            <g transform="translate(68 307)"><circle r="5"/><text x="-14" y="-10">Laingsburg</text></g>
+            <g class="kaart__klein" transform="translate(283 412)"><circle r="4"/><text x="-32" y="28">Calitzdorp</text></g>
+            <g class="kaart__klein" transform="translate(174 400)"><circle r="4"/><text x="-34" y="28">Ladismith</text></g>
+            <g class="kaart__klein" transform="translate(658 453)"><circle r="4"/><text x="10" y="20">Uniondale</text></g>
+            <g class="kaart__klein" transform="translate(484 546)"><circle r="4"/><text x="12" y="6">George</text></g>
+            <g class="kaart__klein" transform="translate(398 614)"><circle r="4"/><text x="-36" y="26">Mosselbaai</text></g>
+            <g class="kaart__klein" transform="translate(250 170)"><circle r="4"/><text x="-120" y="6">Prince Albert-weg</text></g>
+          </g>
+          <text class="kaart__poortnaam" x="508" y="364">Meiringspoort</text>
+
+          <g class="kaart__etiket" data-stap="1"><rect x="612" y="364" width="160" height="48" rx="2"/><text x="624" y="384">25 km deur die poort</text><text x="624" y="403">sowat 20 minute</text></g>
+          <g class="kaart__etiket" data-stap="2"><rect x="120" y="84" width="206" height="48" rx="2"/><text x="132" y="104">Via Laingsburg en die N1</text><text x="132" y="123">tot 2½ uur langer</text></g>
+          <g class="kaart__etiket" data-stap="4"><rect x="640" y="474" width="160" height="48" rx="2"/><text x="652" y="494">Om Willowmore</text><text x="652" y="513">ongeveer 292 km</text></g>
+          <g class="kaart__etiket" data-stap="4"><rect x="30" y="196" width="160" height="48" rx="2"/><text x="42" y="216">Om Laingsburg</text><text x="42" y="235">ongeveer 330 km</text></g>
+          <g class="kaart__etiket kaart__etiket--verbode" data-stap="4"><rect x="296" y="356" width="150" height="30" rx="2"/><text x="308" y="376">Swartbergpas: geen trokke</text></g>
+          <text class="kaart__nota" x="24" y="645">Skematies, nie op skaal nie.</text>
+        </svg>
+      </div>
+
+      <div class="skrolly__stappe">
+        <div class="stap" data-stap="1"><p>Die direkte N12-roete deur Meiringspoort is ongeveer 25 km lank en neem sowat 20 minute om te ry.</p></div>
+        <div class="stap" data-stap="2"><p>’n Volledig geteerde alternatief loop deur Oudtshoorn, die N12, N1 en Beaufort-Wes, wat ongeveer twee tot 2½ uur langer as die gewone reis kan wees.</p></div>
+        <div class="stap" data-stap="3"><p>Die ander alternatiewe is die R62 deur Calitzdorp en Ladismith, terwyl verkeer vanaf Prins Albert via die R407 na Willowmore kan beweeg.</p></div>
+        <div class="stap" data-stap="4"><p>Swaar voertuie kan nie die Swartbergpas gebruik nie en moet Willowmore omry, ’n pad van ongeveer 292 km, of dan Laingsburg, ongeveer 330 km.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <figure class="foto foto--vol" data-theme="nag">
+    <picture>
+      <source srcset="/media/padskade-poort.webp" type="image/webp">
+      <img src="/media/padskade-poort.jpg" width="675" height="900" alt="’n Stuk van die N12 in Meiringspoort waar die teer weggebreek het, met keëls wat die gat afsper" loading="lazy">
+    </picture>
+    <figcaption>Die N12 se teeroppervlak het op verskeie plekke in die poort weggebreek nadat die Grootrivier in Mei 2026 sy walle oorstroom het.</figcaption>
+  </figure>
+
+  <!-- 4. Neutedop -->
+  <section class="blok" data-theme="nag" data-chapter="In ’n neutedop" id="neutedop">
+    <h2 class="hofie">In ’n neutedop</h2>
+    <p class="teks">Die poort vorm deel van die N12 en verbind die Klein- en Groot Karoo. Benewens sy waarde as ’n skilderagtige toeriste-aanloklikheid, is dit ’n lewensaar vir omliggende Karoo-dorpe. Die sluiting het daartoe gelei dat kinders in Klaarstroom vir aansienlike tydperke nie skool kon bywoon nie, terwyl die dorpe De Rust en Prins Albert die verlies aan verkeer en voete ervaar. Tans bly die poort vir trokke gesluit, terwyl gewone voertuie op eie risiko toegelaat word. Die herstelkoste word op ongeveer R500 miljoen beraam en die herstelwerk sal na verwagting twee jaar duur.</p>
+  </section>
+
+  <!-- 5. Die premier se besoek -->
+  <section class="blok" data-theme="nag" data-chapter="Die premier" id="premier">
+    <h2 class="hofie">‘Ons absolute prioriteit’</h2>
+    <p class="teks">Die Wes-Kaapse premier, Alan Winde (61), se besoek in Julie, twee maande nadat die vloedramp in Mei Meiringspoort verwoes het, het die omvang van die pad se belangrikheid vir die omliggende gemeenskappe beklemtoon.</p>
+    <p class="teks">Hy het Meiringspoort beskryf as “ekonomiese en mobiliteitslewenslyne vir plaaslike gemeenskappe en boere.” Die koste vir boere en die klein Karoo-dorpe langs die roete beteken die geslote poort is immers meer as net ’n langer ompad; dit sny hulle af van die verkeer en besoekers waarop plaaslike ondernemings staatmaak.</p>
+  </section>
+
+  <figure class="foto foto--lank" data-theme="nag">
+    <picture>
+      <source srcset="/media/trok-modder.webp" type="image/webp">
+      <img src="/media/trok-modder.jpg" width="720" height="1280" alt="’n Provinsiale vragmotor wat tot by sy wiele in die modder vasgeval het, met die leuse ‘Enige pad, enige vrag, ons lewer af’ op die deur" loading="lazy">
+    </picture>
+    <figcaption>Die beeld wys die omvang van die vloedskade aan Meiringspoort, met die provinsiale voertuig wat in die modder vasgeval het – ironies genoeg met die boodskap “Enige pad, enige vrag, ons lewer af.”</figcaption>
+  </figure>
+
+  <section class="blok" data-theme="nag">
+    <p class="teks">Hy stel dat die provinsie poog om so gou moontlik die pas te herstel om werksgeleenthede en lewensbestaan te beskerm, asook om ekonomiese bedrywighede aan die gang te hou. Winde het ook gesê dat die heropening van die pad “bly ons absolute prioriteit.” Selfs die bekende Meiringspoort-Inligtingsentrum rondom die middelpunt van die pas het hewige skade opgedoen, tot waar die vloer heeltemal met sand bedek is. Die afsetpunt bly voorlopig weg vir toerisme.</p>
+  </section>
+
+  <figure class="foto foto--breed" data-theme="nag">
+    <picture>
+      <source srcset="/media/inligtingsentrum-sand.webp" type="image/webp">
+      <img src="/media/inligtingsentrum-sand.jpg" width="641" height="798" alt="Die binnekant van die Meiringspoort-Inligtingsentrum, met die vloer heeltemal onder ’n laag riviersand" loading="lazy">
+    </picture>
+    <figcaption>Binne die Meiringspoort-Inligtingsentrum naby die middelpunt van die pas: die uitstallings staan nog, maar die vloer lê heeltemal onder sand wat die Grootrivier agtergelaat het.</figcaption>
+  </figure>
+
+  <!-- Stapvideo deur die skade -->
+  <section class="blok blok--video" data-theme="nag" id="stapvideo">
+    <div class="stapvideo">
+      <div class="stapvideo__raam">
+        <video class="stapvideo__video" muted loop playsinline preload="metadata" poster="/media/padskade-stap-poster.jpg">
+          <source src="/media/padskade-stap.mp4" type="video/mp4">
+        </video>
+        <button class="stapvideo__klank" type="button" aria-pressed="false">Klank aan</button>
+      </div>
+      <p class="stapvideo__byskrif">Stap deur die skade: waar die Grootrivier oor die N12 gespoel het, het die teer en betonrande in stukke weggebreek. Vier afsonderlike dele van die pad is heeltemal weggespoel. <a href="https://youtube.com/shorts/Ac5usu9Hfq8" target="_blank" rel="noopener">Kyk ook op YouTube.</a></p>
+    </div>
+  </section>
+
+  <section class="blok" data-theme="nag">
+    <p class="teks">’n Tydelike oplossing is teen Desember 2026 in die vooruitsig gestel, terwyl die permanente herstel van die poort na raming minstens 26 maande sal duur. Die pad is nou tot so ’n mate bygewerk dat voertuie deur kan beweeg, “ten minste aan een kant van die pad,” volgens Winde. Die provinsiale regering van die Wes-Kaap het ook vasgestel dat al 20 rivierkruisings beskadig is en dat vier afsonderlike dele van die pad heeltemal weggespoel is.</p>
+  </section>
+
+  <!-- Syfers -->
+  <section class="blok blok--syfers" data-theme="nag" id="syfers">
+    <dl class="syfers">
+      <div class="syfer"><dd><span class="tel" data-tel="500" data-voor="R" data-na=" miljoen">R0 miljoen</span></dd><dt>beraamde herstelkoste</dt></div>
+      <div class="syfer"><dd><span class="tel" data-tel="20">0</span></dd><dt>rivierkruisings beskadig, van 20</dt></div>
+      <div class="syfer"><dd><span class="tel" data-tel="4">0</span></dd><dt>dele van die pad heeltemal weggespoel</dt></div>
+      <div class="syfer"><dd><span class="tel" data-tel="26">0</span></dd><dt>maande, minstens, vir die permanente herstel</dt></div>
+      <div class="syfer syfer--teks"><dd>Desember 2026</dd><dt>tydelike oplossing in die vooruitsig gestel</dt></div>
+      <div class="syfer syfer--teks"><dd>Oop vir motors, op eie risiko. Gesluit vir trokke.</dd><dt>die poort vandag</dt></div>
+    </dl>
+  </section>
+
+  <!-- 6. Infografika: 25 driwwe -->
+  <section class="blok" data-theme="sand" data-chapter="25 driwwe" id="driwwe">
+    <h2 class="hofie">Vyf-en-twintig driwwe</h2>
+    <p class="teks">Die Meiringspoort-pas, wat soos ’n serpentynlint deur die massiewe bergwande van die Swartberge kronkel, is veel meer as net ’n pad wat die Klein Karoo met die Groot Karoo verbind. Dit is ’n lewendige erfenismonument. Oorspronklik in die 1850’s onder leiding van Andrew Geddes Bain geopen om die streek se vooruitstrewende wol- en landboubedryf te dien, het hierdie poort geslagte lank die belangrikste lewensaar vir ossewaens en reisigers gevorm.</p>
+    <p class="teks">Voordat moderne ingenieursvernuf die pad met stewige brûe en ’n geteerde oppervlak verhef het, moes deurreisigers die wispelturige Grootrivier regstreeks trotseer. Die roete het reisigers verplig om die rivierbedding op 25 verskillende plekke te deurkruis. Hierdie oorsteekplekke, bekend as driwwe, het elkeen hul eie unieke identiteit gekry, geïnspireer deur plaaslike anekdotes, geologiese kenmerke en historiese gebeure. Van Karoo-stortbuie wat die rivier binne minute in ’n kolkende watermassa kon verander tot die stil herinneringe van ou tollenaars en ossewaens, het elke drif ’n narratief van menslike volharding.</p>
+
+    <div class="skrolly skrolly--driwwe" id="driwwe-kaart">
+      <div class="skrolly__grafika">
+        <div class="driwwe__raam">
+          <svg class="driwwe" viewBox="0 0 520 1000" role="img" aria-labelledby="driwwe-titel">
+            <title id="driwwe-titel">Die 25 historiese driwwe van Meiringspoort, van suid na noord</title>
+            <path class="driwwe__rivier" d="" />
+            <path class="driwwe__spoor" d="" />
+            <path class="driwwe__pad" d="" />
+            <g class="driwwe__merkers"></g>
+            <text class="driwwe__eindpunt" x="260" y="990">De Rust, suid</text>
+            <text class="driwwe__eindpunt" x="260" y="16">Klaarstroom, noord</text>
+          </svg>
+          <div class="driwwe__huidige" aria-live="polite"><b>&nbsp;</b><span>&nbsp;</span></div>
+        </div>
+      </div>
+      <div class="skrolly__stappe">
+        <div class="stap" data-drif="0"><p>Wanneer reisigers van suid na noord deur die poort beweeg, vanaf die De Rust-kant na Klaarstroom, volg die roete steeds dieselfde volgorde van 25 historiese driwwe. Elke drif is ’n plek waar die ou pad die Grootrivier moes kruis.</p></div>
+        <div class="stap" data-drif="5"><p>Die eerste driwwe lê naby die suidelike ingang: Spookdrif, Skansdrif, Damdrif, Boesmansdrif en Skelmkloofdrif. Die name kom uit plaaslike anekdotes, geologiese kenmerke en historiese gebeure.</p></div>
+        <div class="stap" data-drif="11"><p>By Herriedrif het die skrywer C.J. Langenhoven in 1929 die naam van sy fiktiewe olifant, Herrie, op die rots gegraveer. Die klip staan vandag nog langs die pad.</p></div>
+        <div class="stap" data-drif="17"><p>Ou Toldrif en Tweede Toldrif onthou die tollenaars wat vroeër reisigers deur die poort laat betaal het. By Watervaldrif stort die waterval teen die rotswand af.</p></div>
+        <div class="stap" data-drif="25"><p>Laastedrif is die laaste drif van die suide af, en die eerste as jy van Klaarstroom se kant af inry. Al 20 moderne rivierkruisings langs hierdie roete is in die 2026-vloed beskadig.</p></div>
+      </div>
+    </div>
+
+    <figure class="foto foto--kaart">
+      <picture>
+        <source srcset="/media/kaart-illustrasie.webp" type="image/webp">
+        <img src="/media/kaart-illustrasie.jpg" width="713" height="1495" alt="Geïllustreerde kaart van Meiringspoort met die 25 driwwe genommer van Oudtshoorn se kant tot by Klaarstroom" loading="lazy">
+      </picture>
+      <figcaption>Kaart van Meiringspoort wat al 25 driwwe en die volledige roete aandui. Bron: Gemini &amp; Canva.</figcaption>
+    </figure>
+  </section>
+
+  <!-- 7. Dronevideo -->
+  <section class="blok blok--drone" data-theme="sand" id="drone">
+    <div class="drone">
+      <div class="drone__raam">
+        <iframe src="https://player.vimeo.com/video/857878298?dnt=1&amp;title=0&amp;byline=0&amp;portrait=0" title="Dronevideo van Meiringspoort" loading="lazy" allow="autoplay; fullscreen; picture-in-picture"></iframe>
+      </div>
+      <p class="drone__byskrif">Meiringspoort uit die lug. Dronebeeldmateriaal gebruik met toestemming van Mountain Passes South Africa.</p>
+    </div>
+  </section>
+
+  <!-- 8. De Rust -->
+  <section class="blok blok--hoofstuk" data-theme="sand" data-chapter="De Rust" id="de-rust">
+    <h2 class="hoofstuk">De Rust</h2>
+    <p class="hoofstuk__sub">Die dorp wat uit wag gebore is</p>
+  </section>
+
+  <section class="blok" data-theme="sand">
+    <p class="teks">Die grootste bedreiging vir Meiringspoort was nog altyd die wispelturige natuur. Die infrastruktuur is oor meer as ’n eeu heen herhaaldelik deur verwoestende vloede meegesleur, met groot historiese vloede in onder meer 1885, 1981 en die verwoestende vloed van November 1996 wat die pad byna drie jaar lank gesluit gehou het. Hierdie meedoënlose vloedskade het die poort dikwels vir weke of maande heeltemal onbegaanbaar gemaak vir vervoerryers.</p>
+
+    <figure class="vloedlyn" id="vloedlyn">
+      <svg viewBox="0 0 800 320" role="img" aria-labelledby="vloedlyn-titel">
+        <title id="vloedlyn-titel">Groot vloede in Meiringspoort: 1885, 1981, 1996 en 2026. Die 2026-vloedlyn was byna twee keer so hoog soos dié van 1996.</title>
+        <line class="vloedlyn__pad" x1="40" y1="260" x2="760" y2="260" />
+        <g class="vloedlyn__jaar" transform="translate(120 0)"><rect class="vloedlyn__water" x="-26" y="260" width="52" height="0" data-hoog="48"/><text y="296">1885</text></g>
+        <g class="vloedlyn__jaar" transform="translate(320 0)"><rect class="vloedlyn__water" x="-26" y="260" width="52" height="0" data-hoog="48"/><text y="296">1981</text></g>
+        <g class="vloedlyn__jaar" transform="translate(500 0)"><rect class="vloedlyn__water" x="-26" y="260" width="52" height="0" data-hoog="104"/><text y="296">1996</text><text class="vloedlyn__nota" x="36" y="150">Die pad was byna</text><text class="vloedlyn__nota" x="36" y="170">drie jaar gesluit</text></g>
+        <g class="vloedlyn__jaar vloedlyn__jaar--nou" transform="translate(680 0)"><rect class="vloedlyn__water" x="-26" y="260" width="52" height="0" data-hoog="200"/><text y="296">2026</text><text class="vloedlyn__nota" x="-170" y="58">Vloedlyn byna</text><text class="vloedlyn__nota" x="-170" y="78">twee keer dié van 1996</text></g>
+      </svg>
+      <figcaption>Vloedjare in Meiringspoort. Die 1885- en 1981-balke is net merkers; dié van 1996 en 2026 wys die relatiewe hoogte van die vloedlyn.</figcaption>
+    </figure>
+
+    <p class="teks">Dit is juis uit hierdie vertragings dat die skilderagtige dorpie De Rust aan die suidelike ingang gebore is; wanneer die rivier in vloed was, moes reisigers op die plaas De Rust (oorspronklik van Petrus Meiring) uitspan en wag dat die water sak om hul reis veilig voort te sit. Wat destyds ’n noodsaaklike ‘rusplek’ voor die gevaarlike deurtog was, het later tot ’n amptelike dorp ontwikkel wat tot vandag toe as die poort na hierdie historiese bergpad dien.</p>
+  </section>
+
+  <section class="blok" data-theme="sand">
+    <h2 class="hofie">‘Mens kom woon nie in die Karoo om ryk te word nie’</h2>
+    <p class="teks">Louwrens Storm, verkoops- en bemarkingsbestuurder van De Rustica en voorsitter van die De Rust-landbouvereniging, sê die landgoed se winkel en restaurant kry swaar omdat minder mense die plaas besoek. De Rustica het in 2023 die prys vir onder andere die beste olyf in die wêreld gewen; dus maak hulle staat op reisigers, veral buitelandse toeriste.</p>
+    <p class="teks">“Die gebrek aan verkeer deur die poort het maar ’n groot impak op die plaaslike bedryf. Die lang ompad verhoog vervoerkoste aansienlik. Daar is ook boere in die poort wat lank nie krag gehad het nie.” Volgens hom het besigheid in die omgewing met tussen 70% en 80% afgeneem nadat Meiringspoort gesluit is.</p>
+
+    <figure class="afname" id="afname">
+      <div class="afname__balk"><div class="afname__vol"></div></div>
+      <figcaption><b>Tot 80% minder besigheid</b> in die omgewing sedert die poort gesluit is, volgens Louwrens Storm.</figcaption>
+    </figure>
+
+    <p class="teks">Celia le Roux van Domein Doornkraal voer aan dat Meiringspoort ’n belangrike verbinding vir boere is en ook die kortste pad na George en Mosselbaai, terwyl hulle van Oudtshoorn die roete gebruik om volstruise na die abattoir te vervoer en diere na veilings te neem.</p>
+    <p class="teks">Anne Meiring (62), eiendomsagent op De Rust en aangetroude familie van een van die ou Meirings van Meiringspoort, genaamd Ryk, verneem dat dit eintlik beter gaan as wat sy gedink het dit sal.</p>
+
+    <blockquote class="aanhaling">
+      <p>Mense se omset het verminder, ja, maar mens kom woon nie in die Karoo om ryk te word nie. Tenders moet ook eet, en meeste besighede hier in De Rust voorsien in elk geval meestal vir die inwoners.</p>
+      <cite>Anne Meiring, eiendomsagent, De Rust</cite>
+    </blockquote>
+
+    <p class="teks">Sy voer aan dat dit besighede forseer het om nuwe inisiatiewe vorendag te bring.</p>
+  </section>
+
+  <section class="blok blok--malva" data-theme="sand" id="malva">
+    <h2 class="hofie">Die Mal’va-projek</h2>
+    <p class="teks">Freda Schoeman, eienaar van Die Pluim, ’n restaurant sentraal geleë in De Rust, moes haar deure toemaak weens die afname van voete in die dorp. Sy was “hartseer om haar personeel af te dank, maar het nie ’n keuse gehad nie.”</p>
+    <p class="teks">Sy het intussen die Mal’va-projek vorendag gebring om terug te gee en om reisigers aan te moedig om doelbewus te stop, want dikwels ry hulle net deur die klein dorpie. Die uiteindelike doelwit is om tussen 10 000 en 20 000 steggies in die hoofstraat, Schoemanstraat, aan te plant, maar sy het ook inwoners aangemoedig om hul eie malvaplantjies rondom die dorp en in hul tuine te plant. Teen einde Augustus is 6 000 wilde malva’s, oftewel <i>Pelargonium zonale</i>, geplant.</p>
+
+    <figure class="malvas" id="malvas">
+      <div class="malvas__veld" aria-hidden="true"></div>
+      <figcaption><b><span class="tel" data-tel="6000">0</span> geplant</b> teen einde Augustus. Elke kol is 100 steggies; die doelwit is 10 000 tot 20 000.</figcaption>
+    </figure>
+
+    <p class="teks">Die internasionaal bekende botanis en voormalige wenner van die Chelsea-blommeskou, Leon Kluge, het ook aangebied om met die uitleg van die malvatuine te help. Hy het gesê dat daar “elke jaar vir drie jaar lank ’n fees sal wees om die kleure, geure en stories van die malvas te beleef.”</p>
+    <p class="teks">Die keuse van die malva is nou verweef met die geskiedenis van die gebied. “Min mense weet dat die groot-groot-oupagrootjie van al die miljoene malvas wat in Europa groei, hier uit Meiringspoort en die Swartberge kom,” het Schoeman gesê. Die Duitse plantkundige Hendrik Oldenland het in die 17de eeu plante uit die gebied na Europa geneem.</p>
+
+    <figure class="foto foto--breed">
+      <picture>
+        <source srcset="/media/malva-visie.webp" type="image/webp">
+        <img src="/media/malva-visie.jpg" width="560" height="548" alt="’n KI-gegenereerde beeld van Schoemanstraat in De Rust, met pienk malvas in groot mandjies langs die pad" loading="lazy">
+      </picture>
+      <figcaption>Betrokkenes wat leiding neem in die projek het ’n KI-gegenereerde beeld van die beoogde eindproduk geskep om te wys hoe die dorp kan lyk wanneer die projek volledig ontwikkel is. Foto: Verskaf.</figcaption>
+    </figure>
+  </section>
+
+  <section class="blok" data-theme="sand" id="speelgrond">
+    <h2 class="hofie">’n Speelgrond sonder verkeer</h2>
+    <p class="teks">Kathryn Eybers van Numbi Valley, ’n permakultuur- en gasteplaas sowat 12 km buite De Rust, sê die poort het ’n ander karakter gekry sedert die verkeer verdwyn het. “Die poort is nou nog stiller, kinders in die area ry met hulle fietse daardeur en dit het een groot speelgrond vir hulle geword.”</p>
+    <p class="teks">“Meiringspoort is ’n ongelooflike plek, waarskynlik een van die mooiste plekke in Suid-Afrika,” sê Kathryn. Sy vertel dat gaste reeds spesifiek by haar kom bly om die poort te voet te verken.</p>
+    <p class="teks">Daarmee saam het die Meiringspoort-wedloop vanjaar ondanks die vloedskade voortgegaan, maar op ’n aangepaste roete. Die 21,1 km-wedloop volg ’n sirkelroete deur die Middelplaas-gebied, met sowat 10 km op teerpad en die res op grondpad. Die 12,5 km-roete loop ook deur Middelplaas, met ongeveer 3 km op teer voordat deelnemers De Rust binnekom. Albei afstande eindig by die NG Kerk in De Rust, soos in vorige jare. Die wedloop is op 10 Oktober voltooi met 1 800 deelnemers vir die 21,1 km en 1 300 vir die 12,5 km. Die organiseerders beskryf die wedloopnaweek, saam met die basaar en ander aktiwiteite, as ’n belangrike ekonomiese inspuiting vir die omliggende dorpe.</p>
+
+    <dl class="syfers syfers--twee">
+      <div class="syfer"><dd><span class="tel" data-tel="1800">0</span></dd><dt>deelnemers oor 21,1 km</dt></div>
+      <div class="syfer"><dd><span class="tel" data-tel="1300">0</span></dd><dt>deelnemers oor 12,5 km</dt></div>
+    </dl>
+
+    <figure class="foto foto--breed">
+      <picture>
+        <source srcset="/media/wedloop-roete.webp" type="image/webp">
+        <img src="/media/wedloop-roete.jpg" width="646" height="400" alt="Satellietkaart met die 2026-wedlooproetes in rooi deur die Middelplaas-gebied, met die begin- en eindpunte gemerk" loading="lazy">
+      </picture>
+      <figcaption>Die aangepaste 2026-roetes van die Meiringspoort 21,1 km- en 12,5 km-wedlope deur die Middelplaas-gebied.</figcaption>
+    </figure>
+  </section>
+
+  <!-- 9. Prins Albert -->
+  <section class="blok blok--hoofstuk" data-theme="nag" data-chapter="Prins Albert" id="prins-albert">
+    <h2 class="hoofstuk">Prins Albert</h2>
+    <p class="hoofstuk__sub">Die lang pad om</p>
+  </section>
+
+  <section class="blok" data-theme="nag">
+    <p class="teks">Vir Prins Albert is dit ’n soortgelyke storie. In die News24-verslag “On the Road | Both sides of the Poort, Part 2: Prince Albert’s long way around” skets joernalis Jan Gerber hoe die vloedskade mense se lewensritme beïnvloed. Volgens hom is dit nie ’n voorspoedige rit nie. Buiten die feit dat pryse oor die algemeen opgaan as gevolg van ’n eksponensieel langer roete vir verskaffers, is mense huiwerig om die pad te ry. Daar is ook hindernisse om by die hospitaal uit te kom.</p>
+    <p class="teks">Tamsin Freemantle, besigheidseienaar in die dorp, het ’n petisie onderteken om te keer dat trokke die pad gebruik. Inwoners het telkens die plaaslike regering gevra om S-vormige sigsae op die pad neer te lê. “Die toestand is nie bevorderlik vir swaar voertuie nie,” sê Gerber. Daar was al reeds een trok wat by die pas afgerol het, en dit was ’n sterfgeval. Freemantle verneem dat drywers op navigasie ry; dit kies die kortste pad en hulle is nie altyd bewus dat die pad skade opgedoen het nie. Sy sê verder dat die trokke verdere skade aan die pad aanrig en weekliks is daar ongelukke of gevalle waar die trokke vassit.</p>
+    <p class="teks">Die oomblik as die poort toemaak of vernietig word, droog besighede se klandisie tot ’n hewige mate op, en die hele dorp word in wag-modus geplaas.</p>
+
+    <blockquote class="aanhaling aanhaling--groot">
+      <p>Ons is afhanklik van hierdie bergpas vir ons voorrade, ons toeriste en ons daaglikse lewe. Elke vloed toets ons veerkragtigheid, maar die mense van Prins Albert staan elke keer saam en vind ’n manier om te oorleef tot die pad herstel is.</p>
+      <cite>Alderman Eugene Maarse, burgemeester</cite>
+    </blockquote>
+
+    <p class="teks">Nie alle reisigers is vooraf bewus van alternatiewe roetes nie. Sommige kies daarom eerder om hul reisplanne te verander of hul oornagverblyf te kanselleer as om ure langer op die pad te wees. Vir ’n klein dorp waar gastehuise, restaurante, winkels en ander toerisme-ondernemings sterk op besoekers staatmaak, kan die verlies aan ’n enkele groep reisigers reeds ’n “merkbare verskil” maak.</p>
+    <p class="teks">Die Karoo-mense en reisigers het ’n persoonlike verbintenis met Meiringspoort. Dit is ’n plek waar mense stilhou om by afsetpunte te kuier en die natuurskoon in te neem, en dit word deeglik beskryf as ’n wonder van die wêreld. Meiring verwoord dié verbintenis eenvoudig:</p>
+  </section>
+
+  <section class="slot" data-theme="nag" id="slot">
+    <picture class="slot__foto">
+      <source srcset="/media/rivier-oor-pad.webp" type="image/webp">
+      <img src="/media/rivier-oor-pad.jpg" width="1280" height="720" alt="Die Grootrivier wat oor die weggespoelde N12 vloei, met die Swartberge in die oggendlig" loading="lazy">
+    </picture>
+    <blockquote class="slot__aanhaling">
+      <p>Dit sal lekker wees as die pad weer volledig oop en herstel is, want dit is ’n plek waarvoor ons lief is.</p>
+      <cite>Anne Meiring</cite>
+    </blockquote>
+  </section>
+
+  <!-- 10. Kassie: Toe en nou -->
+  <section class="blok blok--kassie" data-theme="sand" data-chapter="Toe en nou" id="toe-en-nou">
+    <div class="kassie">
+      <h2 class="hofie hofie--kassie">Toe en nou: Meiringspoort, 160 jaar later</h2>
+      <p class="teks">Die landskap het verander, maar die bergwande van Meiringspoort bly opvallend herkenbaar. Die twee foto’s is op dieselfde plek geneem, met meer as 160 jaar tussenin, en wys hoe die roete deur die Swartberge van ’n vroeë bergpad tot die moderne N12 ontwikkel het.</p>
+
+      <figure class="vergelyk" id="vergelyk">
+        <div class="vergelyk__raam">
+          <picture class="vergelyk__nou">
+            <source srcset="/media/nou-n12.webp" type="image/webp">
+            <img src="/media/nou-n12.jpg" width="335" height="350" alt="Dieselfde draai in Meiringspoort vandag: ’n Land Rover op die geteerde N12 tussen die rotswande" loading="lazy" draggable="false">
+          </picture>
+          <picture class="vergelyk__toe">
+            <source srcset="/media/toe-1860s.webp" type="image/webp">
+            <img src="/media/toe-1860s.jpg" width="335" height="350" alt="’n Argieffoto van dieselfde draai in Meiringspoort, met ’n vroeë motorkar op die grondpad" loading="lazy" draggable="false">
+          </picture>
+          <div class="vergelyk__handvatsel" role="slider" tabindex="0" aria-label="Sleep om toe en nou te vergelyk" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"><span></span></div>
+          <span class="vergelyk__etiket vergelyk__etiket--toe">Toe</span>
+          <span class="vergelyk__etiket vergelyk__etiket--nou">Nou</span>
+        </div>
+        <figcaption>Sleep die lyn om die twee tye te vergelyk. Uit die argiewe: Meiringspoort-Inligtingsentrum.</figcaption>
+      </figure>
+
+      <p class="teks">Meiringspoort is in 1858 amptelik as padverbinding geopen en het van vroeg af ’n belangrike skakel tussen die binneland en die kus gevorm. Waar reisigers destyds met perde en waens deur die poort beweeg het, ry duisende motoriste vandag deur dieselfde landskap.</p>
+      <p class="teks">Toe die eerste pad deur Meiringspoort in 1858 geopen is, was dit ’n belangrike deurgang vir reisigers, boere en handelsware tussen die Klein- en Groot Karoo. Die eerste vrag wol het op die dag van die amptelike opening met twaalf lang wolwaens deur die poort na Mosselbaai vertrek. Teen 1870 is meer as een miljoen kilogram wol deur die poort vervoer. <span class="bron">Bron: De Rust Heritage.</span></p>
+      <p class="teks">Die ou foto gee ’n blik op ’n tyd toe die pad nog hoofsaaklik deur waens en perde gebruik is. Vandag volg die moderne N12 dieselfde natuurlike deurgang, met teerpad, padtekens en voertuie wat deur die rotswande beweeg. Die landskap self het egter veel van sy bekende karakter behou.</p>
+
+      <h3 class="hofie hofie--klein">Die poort op doek</h3>
+      <p class="teks">Juis hierdie besondere landskap het Meiringspoort oor die jare ook tot ’n gewilde onderwerp in Suid-Afrikaanse kuns gemaak. Die dramatiese rotsformasies het kunstenaars soos J.H. Pierneef en Thinus de Jongh geïnspireer. Pierneef se <i>Double Drift Corner</i> is een van die bekende kunswerke wat met die poort verbind word.</p>
+
+      <div class="kuns">
+        <figure class="kuns__werk">
+          <picture>
+            <source srcset="/media/pieterse-skildery.webp" type="image/webp">
+            <img src="/media/pieterse-skildery.jpg" width="230" height="334" alt="Ferdi Pieterse se skildery van Double Drift Corner in ’n houtraam: die N12 wat tussen hoë rotswande deur draai" loading="lazy">
+          </picture>
+          <figcaption>Geskilder deur Ferdi Pieterse, voormalige skoolhoof van Punt Hoërskool in Mosselbaai.</figcaption>
+        </figure>
+        <figure class="kuns__werk">
+          <picture>
+            <source srcset="/media/pierneef-double-drift.webp" type="image/webp">
+            <img src="/media/pierneef-double-drift.jpg" width="389" height="446" alt="Pierneef se Double Drift Corner: geometriese rotswande in oker en rooi, met die rivier onder" loading="lazy">
+          </picture>
+          <figcaption>J.H. Pierneef, <i>Double Drift Corner</i>.</figcaption>
+        </figure>
+      </div>
+
+      <p class="teks">Ferdi Pieterse (70) het dié weergawe van <i>Double Drift Corner</i> geskilder voordat Pierneef syne geskep het. Die kunswerk beeld die dramatiese rotsformasies en kronkelende rivierloop van Meiringspoort uit, waar die pad deur die Swartberge tussen hoë kranse deur vleg. Dit vang die besondere landskap vas wat die poort ’n geliefde bestemming en belangrike deurgang tussen die Klein- en Groot-Karoo maak. Ná die verwoestende vloed van 2026, wat die pad ernstig beskadig het, herinner die skildery aan die natuurskoon en erfenis wat agter die afgeslote roete lê.</p>
+
+      <details class="uitklap">
+        <summary>Wie was Pierneef?</summary>
+        <p class="teks">Jacobus Hendrik (Henk) Pierneef is op 13 Augustus 1886 in Pretoria gebore en is op 4 Oktober 1957 op 71-jarige ouderdom in dieselfde stad oorlede. Hy word as een van Suid-Afrika se belangrikste landskapskilders beskou en is veral bekend vir sy uitbeeldings van die land se natuurlike landskappe. Sy kenmerkende styl het geometriese vorms, eenvoudige lyne en groot kleurvlakke ingesluit waarmee hy die vorms van berge, bome en ander landskapselemente beklemtoon het. Tydens die Anglo-Boereoorlog het sy gesin in 1901 na Nederland verhuis, waar hy met Europese kuns kennis gemaak het en sy artistieke ontwikkeling voortgesit het. Van sy belangrikste opdragte was die muurskilderye by Johannesburg se Parkstasie en kunspanele vir Suid-Afrika-huis in Londen. Vandag word sy werke in verskeie Suid-Afrikaanse kunsmuseums en openbare en private versamelings bewaar. Pierneef se werk het ’n blywende invloed op Suid-Afrikaanse landskapskuns gehad en het gehelp om ’n herkenbare visuele voorstelling van die land se natuurerfenis te vestig.</p>
+      </details>
+
+      <p class="teks">Die belangstelling in kuns rondom die poort het selfs tydens die Covid-19-pandemie ’n nuwe vorm aangeneem. Met voertuie wat nie deur die poort kon beweeg nie, het mense dit steeds te voet besoek. Die stiller omgewing het kunstenaars die geleentheid gebied om die rotswande, rivier en omliggende landskap van naderby te ervaar, waarna talle nuwe kunswerke uit dié tyd voortgespruit het.</p>
+    </div>
+  </section>
+
+  <!-- 11. Erkennings -->
+  <footer class="erkenning" data-theme="nag" data-chapter="Einde" id="erkenning">
+    <div class="erkenning__binne">
+      <p class="erkenning__skrywer">Geskryf en saamgestel deur<br><b>Estian Hobbs</b><br>Studentenommer 2024070222<br>Finalejaarsprojek, 2026</p>
+      <div class="erkenning__bronne">
+        <h2>Bronne en onderhoude</h2>
+        <ul>
+          <li>Louwrens Storm, De Rustica en die De Rust-landbouvereniging</li>
+          <li>Celia le Roux, Domein Doornkraal</li>
+          <li>Anne Meiring, eiendomsagent, De Rust</li>
+          <li>Freda Schoeman, Die Pluim en die Mal’va-projek</li>
+          <li>Kathryn Eybers, Numbi Valley</li>
+          <li>Tamsin Freemantle, Prins Albert</li>
+          <li>Alan Winde, premier van die Wes-Kaap, tydens sy besoek in Julie 2026</li>
+          <li>Jan Gerber, News24: “On the Road | Both sides of the Poort, Part 2: Prince Albert’s long way around”</li>
+          <li>De Rust Heritage</li>
+          <li>Meiringspoort-Inligtingsentrum, argieffoto</li>
+          <li>Mountain Passes South Africa, dronevideo met toestemming</li>
+          <li>Geïllustreerde kaart van die driwwe: Gemini en Canva. Roetekaart, vloedlyn en driwwe-infografika: eie werk vir hierdie webwerf.</li>
+        </ul>
+        <p>Foto’s en video’s verskaf, tensy anders aangedui. Die vloedvideo’s is ook op YouTube: <a href="https://youtube.com/shorts/NlecABVuq1w" target="_blank" rel="noopener">die water oor die pad</a> en <a href="https://youtube.com/shorts/Ac5usu9Hfq8" target="_blank" rel="noopener">die stap deur die skade</a>.</p>
+      </div>
+    </div>
+    <a class="erkenning__terug" href="#verhaal">Terug na bo</a>
+  </footer>
+
+</main>
+
+<script type="module" src="/src/main.js"></script>
+</body>
+</html>
