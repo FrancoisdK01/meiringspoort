@@ -300,6 +300,9 @@ a { color: inherit; }
 .foto--lank figcaption { margin: 0 0 0.4rem; }
 @media (max-width: 860px) {
   .foto--lank { grid-template-columns: 1fr; gap: 0.8rem; }
+  /* Die prent moet ’n vaste breedte hê voordat dit lui laai, anders is sy blok
+     0 px hoog tot die foto kom en skuif alles daaronder met ’n halwe skerm. */
+  .foto--lank picture { justify-self: stretch; }
   .foto--lank img { height: auto; width: 100%; }
 }
 .foto--kaart { padding: var(--blok-y) 0 0; max-width: 34rem; }
@@ -350,7 +353,9 @@ a { color: inherit; }
   .skrolly__grafika { height: 100svh; align-items: start; padding: 4svh 0.75rem 0; }
   .skrolly__stappe { margin-top: -100svh; padding: 50svh 1rem 10svh; }
   .stap { min-height: 100svh; align-items: flex-end; padding: 0 0 6svh; }
-  .stap p { max-width: none; font-size: var(--t-body); opacity: 0; }
+  /* Die paragraaf kleef onder aan die skerm terwyl sy stap verbyskrol, sodat dit
+     stilstaan en leesbaar bly vir die hele tyd wat die stap aktief is. */
+  .stap p { position: sticky; bottom: 6svh; max-width: none; font-size: var(--t-body); opacity: 0; }
   .stap.is-aktief p { opacity: 1; }
 }
 

@@ -61,3 +61,8 @@ initSlot(ctx);
 // Herbereken sodra lettertipes en media gelaai is
 document.fonts?.ready.then(() => ScrollTrigger.refresh());
 window.addEventListener('load', () => ScrollTrigger.refresh());
+// Lui foto’s laai eers wanneer die leser naby kom; as een se blok dan groei,
+// skuif alles daaronder en moet die skrolposisies herbereken word.
+document.querySelectorAll('img[loading="lazy"]').forEach((img) => {
+  if (!img.complete) img.addEventListener('load', () => ScrollTrigger.refresh(), { once: true });
+});
